@@ -41,3 +41,20 @@ if __name__ == "__main__":
 """
 Pasta templates = padrão do Python para se colocar os arquivos html
 """
+
+## SOBRE O ARQUIVO Procfile -----------
+"""
+web: gunicorn meu_site:app
+# serve pra conseguir mandar seu site pra uma hospedagem
+# é padrão do flask, a unica coisa que deve mudar é o nome da pagina python, que nesse caso é 'meu_site'
+"""
+
+## SOBRE O ARQUIVO requeriments.txt -----------
+"""
+# cria ele pelo terminal digitando:
+pip freeze > requirements.txt
+
+# ele vai listar tudo que seu site está usando pra funcionar (ex: flask, etc)
+# dessa forma o servidor de hospedagem vai saber oque ele precisa instalar pro site rodar lá também
+
+"""
